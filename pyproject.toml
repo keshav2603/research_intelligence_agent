@@ -1,0 +1,24 @@
+[project]
+name = "research-intelligence-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "keshav2603", email = "keshavsingla2603@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dotenv>=0.9.9",
+    "langchain>=1.4.4",
+    "langchain-openai>=1.7.0",
+    "langchain-tavily>=0.2.18",
+    "langgraph>=1.2.14",
+    "streamlit>=1.65.0",
+]
+
+[project.scripts]
+research-intelligence-agent = "research_intelligence_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"
